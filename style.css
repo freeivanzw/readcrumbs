@@ -1,0 +1,29 @@
+.navigation, .road {
+    display: flex;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.navigation__section, .road__section {
+    list-style: none;
+    margin-left: 0px;
+    margin-right: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.navigation__section:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: 0px;
+    transform: translateX(50%);
+}
+
+.road__section:not(:last-child)::after {
+    content: ">";
+    position: absolute;
+    right: 0px;
+    transform: translateX(50%);
+}
+
+
